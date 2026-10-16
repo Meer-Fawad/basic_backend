@@ -43,6 +43,10 @@ const githubdata={
   "created_at": "2024-06-08T15:17:40Z",
   "updated_at": "2026-08-10T06:48:48Z"
 }
+AudioParam.get('/info', (req, res) => {
+  res.json(githubdata);
+  
+});
 app.get('/github', (req, res) => {
   res.json(githubdata);
 });
